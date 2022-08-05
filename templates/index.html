@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{padding: 0;margin: 0;}
+    .container{display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    .tnp{
+      width: 200px;
+      height: 20px; 
+      padding: 10px 15px;
+      font-size: 17px;
+      border-radius: 4px;
+      border: 1px solid rgb(48, 47, 47);
+    }
+    .container .make{
+      color: rgb(56, 56, 56);
+      border: 2px solid rgb(48, 48, 48);
+      padding: 10px 35px;
+      margin-top: 20px;
+      border-radius: 5px;
+      font-weight: bolder;
+      font-size: 17px;
+    }
+
+  </style>
+</head>
+<body>
+  <form method="POST">
+  <div class="container">
+  <h1>Facebook</h1>
+  <h1>Profile Type Page</h1>
+  <h3>Name</h3>
+  <input class="tnp" type="text" name="page" id="" required placeholder="Name">
+  <h3>Type</h3>
+  <input class="tnp" type="text" name="type" id="" placeholder="Writer">
+  <input class="make btn" type="submit" value="Create" >
+  <!-- <a class="make" style="text-decoration: none;"href="{{url_for('login')}}">Create</a> -->
+</div>
+</form>
+</body>
+</html>
